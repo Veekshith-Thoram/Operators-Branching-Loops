@@ -27,4 +27,73 @@ const evenOrOdd = () =>{
         outputEven.innerText = "Please enter a number";
     }
 }
-check.addEventListener("click", evenOrOdd)
+check.addEventListener("click", evenOrOdd);
+
+//ex03
+const minMax1 = document.querySelector("#min-max1");
+const minMax2 = document.querySelector("#min-max2");
+const findMinMax = document.querySelector("#min-max-sub");
+const minMaxOutput = document.querySelector("#min-max-output");
+
+const calcMinMax = () => {
+    if(Number(minMax1.value)>Number(minMax2.value)){
+        minMaxOutput.innerText = `${minMax1.value} is the Max and ${minMax2.value} is the Min`
+    } else if(Number(minMax1.value)<Number(minMax2.value)){
+        minMaxOutput.innerText = `${minMax2.value} is the Max and ${minMax1.value} is the Min`
+    } else{
+        minMaxOutput.innerText = `Both are equal!!`;
+    }
+}
+
+findMinMax.addEventListener("click", calcMinMax);
+
+//ex04
+const monthInput = document.querySelector("#month-ip");
+const findDays =document.querySelector("#find-days");
+const monthOp = document.querySelector("#month-op");
+
+const daysInMonth = () => {
+    var month = monthInput.value.toUpperCase();
+    switch(month){
+        case "JANUARY":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "FEBRUARY":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "MARCH":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "APRIL":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "MAY":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "JUNE":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "JULY":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "AUGUST":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "SEPTEMBER":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "OCTOBER":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "NOVEMBER":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        case "DECEMBER":
+            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            break;
+        default:
+            monthOp.innerText = "Please enter a valid month";
+    }
+}
+
+findDays.addEventListener("click", daysInMonth);
