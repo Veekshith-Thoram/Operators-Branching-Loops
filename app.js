@@ -59,19 +59,19 @@ const daysInMonth = () => {
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
             break;
         case "FEBRUARY":
-            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            monthOp.innerText = `The number of days in ${monthInput.value} is 28/29`;
             break;
         case "MARCH":
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
             break;
         case "APRIL":
-            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            monthOp.innerText = `The number of days in ${monthInput.value} is 30`;
             break;
         case "MAY":
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
             break;
         case "JUNE":
-            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            monthOp.innerText = `The number of days in ${monthInput.value} is 30`;
             break;
         case "JULY":
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
@@ -80,13 +80,13 @@ const daysInMonth = () => {
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
             break;
         case "SEPTEMBER":
-            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            monthOp.innerText = `The number of days in ${monthInput.value} is 30`;
             break;
         case "OCTOBER":
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
             break;
         case "NOVEMBER":
-            monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
+            monthOp.innerText = `The number of days in ${monthInput.value} is 30`;
             break;
         case "DECEMBER":
             monthOp.innerText = `The number of days in ${monthInput.value} is 31`;
